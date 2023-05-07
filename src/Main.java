@@ -16,8 +16,9 @@ public class Main {
             key = scan.nextLine();
             value = scan.nextLine();
             krajStolica.put(key, value);
+
         }
-        while (!value.equals("/") || !key.equals("/"));
+        while (!krajStolica.containsKey("/") || !krajStolica.containsValue("/"));
         System.out.println("Wpisano znak \"/\", zakonczenie dodawania elementow.");
         System.out.println();
 
